@@ -1,22 +1,219 @@
-h1 {
-   text-align: center;
-   margin-top: 250px;
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 1%;
+  }
+  
+  body {
+    font-family: 'Tsar';
+    text-transform: uppercase;
+    color: white;
+    background: url(http://www.theazweekend.com/wp-content/uploads/2018/08/Football-Background.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
 
-img {
-    width: 200px;
-    height: 200px;
-}
-
-img.logo {
-    display: block;
+  .header li {
+    display: inline-block;
+    margin: 1em;
+    list-style: none;
+    font-size: 1.3em;
+  }
+  
+  .innerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-}
+    margin-bottom: 3em;
+    background-color: rgb(27, 51, 75); 
+    border: 0.1em #371d0d solid;
+  }
+  
+  .startQuiz,
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    background-color: rgb(27, 51, 75); 
+  }
 
-button.start {
+  label {
     display: block;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  .images {
+    margin-bottom: 0.5em;
+    width: 90%;
+    max-width: 240px;
+  }
+  
+  h1,
+  h3,
+  legend {
+    margin-bottom: 0.5em;
+  }
+  
+  .answerOption {
+    margin-top: 0.5em;
+  }
+  
+  .button {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-}
+    height: 3em;
+    cursor: pointer;
+    font-family: 'Tsar';
+    text-transform: uppercase;
+    border: 0.1em rgb(12, 156, 175) solid;
+    background-color: blue;
+    color: #ffffff;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: #30b2ee;
+    color: #ffffff;
+    border: 0.1em #371d0d solid;
+  }
+  
+  .final {
+    display: block;
+  }
+  
+  @media only screen and (min-width: 320px) {
+    .innerBox {
+      width: 90%;
+      height: 31em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+    }
+  
+    .box {
+      width: 90%;
+      height: 90%;
+    }
+  
+    .images {
+      width: 85%;
+    }
+  
+    .button {
+      margin-top: 0.5em;
+      font-size: 1em;
+      width: 8em;
+      height: 2.5em;
+    }
+  
+    h1,
+    h3,
+    legend {
+      font-size: 1em;
+    }
+  
+    .header li {
+      font-size: 1em;
+    }
+  
+    .sizeMe {
+      font-size: 0.9em;
+      margin: 0.1em;
+    }
+
+    .sizeMee {
+        font-size: 2em;
+        margin: 0.1em;
+    }
+  }
+  
+  @media only screen and (min-width: 550px) {
+    .innerBox {
+      width: 29.5em;
+      height: 31.5em;
+      padding-top: 2.6em;
+      padding-bottom: 2.6em;
+    }
+  
+    .box {
+      width: 85%;
+      height: 98%;
+    }
+  
+    .button {
+      margin-top: 1em;
+      font-size: 1em;
+      width: 10em;
+      height: 2.5em;
+    }
+  
+    h1,
+    h3,
+    legend {
+      font-size: 1em;
+    }
+  
+    .sizeMe {
+      font-size: 0.9em;
+    }
+  }
+
+  .sizeMee {
+      font-size: 2em;
+  }
+  
+  @media only screen and (min-width: 800px) {  
+    .header li {
+      margin: 1em;
+      font-size: 1.3em;
+    }
+  
+    .innerBox {
+      width: 35em;
+      height: 38em;
+    }
+  
+    .box {
+      width: 85%;
+      height: 95%;
+    }
+  
+    h1,
+    h3,
+    legend {
+      font-size: 1.3em;
+    }
+  
+    .sizeMe {
+      font-size: 1em;
+    }
+
+    .sizeMee {
+        font-size: 2em;
+    }
+  
+    .button {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 12em;
+      font-size: 1.2em;
+    }
+  }
+  

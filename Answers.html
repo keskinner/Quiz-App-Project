@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NFL Quiz App</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <section class="response box altBox">
+       <div class="wrongAnswer">
+            <h3>Nope! that's the wrong answer...</h3>
+            <p class="sizeMe">It's actually:</p>
+            <p class="sizeMee">${STORE[questionNumber].correctAnswer}</p>
+            <button type="button" class="nextButton button">Next</button>
+       </div>
+        <div class="rightAnswer">
+            <h3>Your answer is correct!</h3>
+            <button type="button" class="nextButton button">Next</button>
+        </div>
+     </section>
+  </body>
+    <script src="index.js"></script>
+  </body>
+</html>
