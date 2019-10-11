@@ -79,7 +79,7 @@ let questionNumber = 0;
 //template to generate each question
 function generateQuestion() {
   if (questionNumber < STORE.length) {
-    return createThing(questionNumber);
+    return questionForm(questionNumber);
   } else {
     $('.questionBox').hide();
     finalScore();
@@ -140,7 +140,7 @@ function submitAnswer() {
 }
 
 //creates html for question form
-function createThing(questionIndex) {
+function questionForm(questionIndex) {
   let formMaker = $(`<form>
     <fieldset>
       <legend class="questionText">${STORE[questionIndex].question}</legend>
